@@ -1,5 +1,7 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
+  {% block content %}
   <head>
     <meta charset="UTF-8" />
     <title>Todo App</title>
@@ -20,13 +22,17 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    
-    <button class="btn btn-primary my-4 float-end "><a href="/logout"> Logout</a> </button>
 
-    <h1>Todo List</h1>
+    <style>
+      #logout {
+        display: block;
+      }
+    </style>
+
+    <h1>List of Tasks</h1>
 
     <div>
-      Add a new todo item:
+      Add a new task to the list:
       <form action="{{ url_for('add') }}" method="POST">
         <input type="text" name="todoitem" />
         <input class="btn btn-primary" type="submit" value="Add Item" />
@@ -62,5 +68,6 @@
         {% endfor %}
       </ul>
     </div>
+    {% endblock %}
   </body>
 </html>

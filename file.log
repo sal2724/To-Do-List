@@ -1,21 +1,12 @@
-2023-08-17 14:53:10,674 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2023-09-06 11:48:54,947 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2023-08-17 14:53:10,674 - INFO - [33mPress CTRL+C to quit[0m
-2023-08-17 14:53:15,951 - INFO - 127.0.0.1 - - [17/Aug/2023 14:53:15] "[32mGET / HTTP/1.1[0m" 302 -
-2023-08-17 14:53:15,965 - INFO - Started Login
-2023-08-17 14:53:15,992 - INFO - 127.0.0.1 - - [17/Aug/2023 14:53:15] "GET /login HTTP/1.1" 200 -
-2023-08-17 14:53:16,214 - INFO - 127.0.0.1 - - [17/Aug/2023 14:53:16] "[33mGET /static/new.css HTTP/1.1[0m" 404 -
-2023-08-17 14:53:40,522 - INFO - 127.0.0.1 - - [17/Aug/2023 14:53:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2023-08-17 14:53:45,465 - INFO - Started Login
-2023-08-17 14:53:45,795 - INFO - 127.0.0.1 - - [17/Aug/2023 14:53:45] "[32mPOST /login HTTP/1.1[0m" 302 -
-2023-08-17 14:53:45,825 - INFO - 127.0.0.1 - - [17/Aug/2023 14:53:45] "GET / HTTP/1.1" 200 -
-2023-08-17 14:53:50,781 - INFO - 127.0.0.1 - - [17/Aug/2023 14:53:50] "[33mGET /flutter_service_worker.js?v=1194232723 HTTP/1.1[0m" 404 -
-2023-08-17 14:53:50,825 - INFO - User is logged out
-2023-08-17 14:53:50,825 - INFO - 127.0.0.1 - - [17/Aug/2023 14:53:50] "[32mGET /logout HTTP/1.1[0m" 302 -
-2023-08-17 14:53:50,830 - INFO - Started Login
-2023-08-17 14:53:50,833 - INFO - 127.0.0.1 - - [17/Aug/2023 14:53:50] "GET /login HTTP/1.1" 200 -
-2023-08-17 14:53:50,862 - INFO - 127.0.0.1 - - [17/Aug/2023 14:53:50] "[33mGET /static/new.css HTTP/1.1[0m" 404 -
-2023-08-17 14:54:03,659 - INFO - 127.0.0.1 - - [17/Aug/2023 14:54:03] "[32mGET / HTTP/1.1[0m" 302 -
-2023-08-17 14:54:03,670 - INFO - Started Login
-2023-08-17 14:54:03,671 - INFO - 127.0.0.1 - - [17/Aug/2023 14:54:03] "GET /login HTTP/1.1" 200 -
-2023-08-17 14:54:03,698 - INFO - 127.0.0.1 - - [17/Aug/2023 14:54:03] "[33mGET /static/new.css HTTP/1.1[0m" 404 -
+2023-09-06 11:48:54,947 - INFO - [33mPress CTRL+C to quit[0m
+2023-09-06 11:48:57,154 - INFO - 127.0.0.1 - - [06/Sep/2023 11:48:57] "GET / HTTP/1.1" 200 -
+2023-09-06 11:48:57,242 - INFO - 127.0.0.1 - - [06/Sep/2023 11:48:57] "[33mGET /static/new.css HTTP/1.1[0m" 404 -
+2023-09-06 11:48:59,212 - INFO - 127.0.0.1 - - [06/Sep/2023 11:48:59] "[33mGET /flutter_service_worker.js?v=1194232723 HTTP/1.1[0m" 404 -
+2023-09-06 11:49:00,951 - INFO - User is logged out
+2023-09-06 11:49:00,951 - INFO - 127.0.0.1 - - [06/Sep/2023 11:49:00] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-09-06 11:49:00,967 - INFO - Started Login
+2023-09-06 11:49:00,975 - INFO - 127.0.0.1 - - [06/Sep/2023 11:49:00] "GET /login HTTP/1.1" 200 -
+2023-09-06 11:49:01,015 - INFO - 127.0.0.1 - - [06/Sep/2023 11:49:01] "[33mGET /static/new.css HTTP/1.1[0m" 404 -
+2023-09-06 11:49:03,106 - INFO - 127.0.0.1 - - [06/Sep/2023 11:49:03] "[33mGET /flutter_service_worker.js?v=1194232723 HTTP/1.1[0m" 404 -
