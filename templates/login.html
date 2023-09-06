@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% block content %}
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Login Form</title>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+  crossorigin="anonymous"
+/>
+</head>
+<body>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
+
+  <style>
+    #registeration {
+      display: block;
+    }
+  </style>
+  <div class="container my-4">
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %}
+      {% for category, message in messages %} {% if category == 'error'%}
+      <p class="alert alert-danger alert-dismissible fade show" role="alert">{{ message }}</li>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+      {% else %}
+      <p class="alert alert-primary">{{ message }}</li>
+      {% endif %} {% endfor %}
+    {% endif %} {% endwith %}
+
+    <h2>User Login</h2>
+    <form action="http://127.0.0.1:5000/login" method="post">
+      {% if msg is defined and msg %}
+      <div class="alert alert-warning">{{ msg }}</div>
+      {% endif %}
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input
+          type="username"
+          class="form-control"
+          id="username"
+          name="username"
+          placeholder="Enter username"
+          name="username"
+        />
+      </div>
+      <!-- <div class="form-group">
+			<label for="email">Email:</label>
+			<input type="email" class="form-control" id="email" name="email" placeholder="Enter email" name="email">
+		</div> -->
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+          name="pswd"
+        />
+      </div>
+      <button id="login" type="submit" class="btn btn-primary">Login</button>
+      <p class="bottom">
+        Dont't have an account?
+        <a class="bottom" href="/register"> Register here</a>
+      </p>
+    </form>
+  </div>
+
+  {% endblock %}
+</body>
